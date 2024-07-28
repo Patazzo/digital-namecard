@@ -6,6 +6,18 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Muli:200,300" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+	function copyToClipboard(element) {
+	  var text = element.textContent || element.innerText;
+	  var textarea = document.createElement("textarea");
+	  textarea.value = text;
+	  document.body.appendChild(textarea);
+	  textarea.select();
+	  document.execCommand("copy");
+	  document.body.removeChild(textarea);
+	  alert("Text copied to clipboard: " + text);
+	}
+  </script>
 </head>
 
 <body>
@@ -25,9 +37,9 @@
 		<div class="container">
 			<div class="row name-title-company">
 				<div class="col is-6">
-					<p class="text-name">Preston Lim</p>
-					<p class="text-title-company">Associate Software Engineer</p>
-					<p class="text-title-company">Data Science Division, GovTech</p>
+					<p class="text-name">Pierre-Antoine Terrazzoni</p>
+					<p class="text-title-company" onclick="copyToClipboard(this)">International Coordinator</p>
+					<!-- <p class="text-title-company">Data Science Division, GovTech</p> -->
 				</div>
 				<div class="col">
 					<img src="assets/govtech-logo-blue.svg" alt="Company Logo">
@@ -37,14 +49,14 @@
 	</section>
 
 	<section class="bg-color-white secondary-info">
-		<a href="mailto:preston@data.gov.sg">
+		<a href="mailto:international@cirrusaviation.com">
 			<div class="container">
 				<div class="row detail">
 					<div class="col">
 						<img src="assets/icon-email.svg" alt="Email Icon"">
 					</div>
 					<div class="col is-8">
-						<p class="text-detail">preston@data.gov.sg</p>
+						<p class="text-detail">international@cirrusaviation.com</p>
 					</div>
 					<div class="col">
 						<img src="assets/right-arrow.svg" alt="Right Arrow" height="50%" width="40%">
@@ -62,7 +74,7 @@
 						<img src="assets/icon-phone.svg" alt="Phone Icon"">
 					</div>
 					<div class="col is-8">
-						<p class="text-detail">(+65) 9123 4567</p>
+						<p class="text-detail">+33 7 82 21 20 08</p>
 					</div>
 					<div class="col">
 						<img src="assets/right-arrow.svg" alt="Right Arrow" height="50%" width="40%">
@@ -73,14 +85,14 @@
 	</section>
 
 	<section class="bg-color-white secondary-info">
-		<a href="https://www.tech.gov.sg">
+		<a href="https://www.cirrusaviation.com/">
 			<div class="container">
 				<div class="row detail">
 					<div class="col">
 						<img src="assets/icon-website.svg" alt="Website Icon"">
 					</div>
 					<div class="col is-8">
-						<p class="text-detail">tech.gov.sg</p>
+						<p class="text-detail">cirrusaviation.com</p>
 					</div>
 					<div class="col">
 						<img src="assets/right-arrow.svg" alt="Right Arrow" height="50%" width="40%">
